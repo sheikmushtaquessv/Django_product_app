@@ -1,0 +1,16 @@
+<!-- homepage.html -->
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Homepage</title>
+</head>
+<body>
+    <h1>Welcome to the Homepage</h1>
+    <form action="{% url 'scrape_and_download' %}" method="post">
+        {% csrf_token %}
+        <button type="submit">Scrape Data and Download as CSV</button>
+        <!-- <button onclick="//webscraper.io/test-sites/e-commerce/allinone/computers/tablets">Open File</button> -->
+    </form>
+</body>
+</html>
